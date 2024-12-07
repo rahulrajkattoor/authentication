@@ -1,3 +1,4 @@
+import 'package:authentication/view/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,7 @@ class HomePage extends StatelessWidget {
 
   void signOut(BuildContext context) async {
     await _auth.signOut();
-    Navigator.pushReplacementNamed(context, '/auth');
+    Navigator.push(context,MaterialPageRoute(builder: (conttext)=>AuthPage()));
   }
 
   @override
