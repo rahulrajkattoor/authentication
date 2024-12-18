@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text('Welcome!'),
+        child: Text('User Welcome!'),
       ),
     );
   }
